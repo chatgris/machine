@@ -9,11 +9,9 @@ Gem::Specification.new do |s|
   s.authors       = ["chatgris"]
   s.email         = ["jboyer@af83.com"]
   s.homepage      = "https://github.com/chatgris/machine"
-  s.summary       = "TODO: summary"
-  s.description   = "TODO: description"
-
-  s.files         = `git ls-files app lib`.split("\n")
+  s.summary       = "Machine collects some informations about cpu, memory, processes."
+  s.description   = "Machine collects some informations about cpu, memory, processes."
+  s.files         = `git ls-files lib LICENSE README.md`.split("\n")
   s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
-  s.rubyforge_project = '[none]'
 end
