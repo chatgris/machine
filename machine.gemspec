@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files lib LICENSE README.md`.split("\n")
   s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
+  s.add_dependency 'sys-proctable'
 end
