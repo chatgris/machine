@@ -1,10 +1,10 @@
 # encoding: utf-8
 module Machine
   class Info
-    class Cpu < CpuDefault
+    class CpuDefault
       class << self
         def cores_size
-          `grep -c processor /proc/cpuinfo`.to_i
+          1
         end
       end
     end
@@ -12,13 +12,14 @@ module Machine
     class Memory
       class << self
         def mem_total
-          `grep MemTotal /proc/meminfo`.split(' ')[1].to_i
+          1024 * 1024
         end
 
         def mem_free
-          `grep MemFree /proc/meminfo`.split(' ')[1].to_i
+          512 * 1024
         end
       end
     end
   end
 end
+
