@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Machine by chatgris</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/chatgris/machine">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Machine</h1>
+            <h2>Machine collects some informations about cpu, memory, processes.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/chatgris/machine/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/chatgris/machine/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>Machine collects informations about cpu, memory, processes.</p>
+
+<h1>Usage</h1>
+
+<div class="highlight"><pre><span class="no">Machine</span><span class="o">::</span><span class="no">Info</span><span class="o">::</span><span class="no">Cpu</span><span class="o">.</span><span class="n">cores_size</span>
+<span class="no">Machine</span><span class="o">::</span><span class="no">Info</span><span class="o">::</span><span class="no">Memory</span><span class="o">.</span><span class="n">mem_total</span>
+<span class="no">Machine</span><span class="o">::</span><span class="no">Info</span><span class="o">::</span><span class="no">Memory</span><span class="o">.</span><span class="n">mem_free</span>
+<span class="no">Machine</span><span class="o">::</span><span class="no">ProcessStatus</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span><span class="o">.</span><span class="n">pctcpu</span>
+<span class="no">Machine</span><span class="o">::</span><span class="no">ProcessStatus</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span><span class="o">.</span><span class="n">pctmem</span>
+</pre></div>
+
+<p>Check out the <a href="https://github.com/djberg96/sys-proctable">sys-proctable</a> from
+documentation about ProcessStatus.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/chatgris">chatgris</a> can be found on <a href="https://github.com/chatgris/machine">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
