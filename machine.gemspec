@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version       = Machine::VERSION
   s.authors       = ["chatgris"]
   s.email         = ["jboyer@af83.com"]
-  s.homepage      = "https://github.com/chatgris/machine"
+  s.homepage      = "http://chatgris.github.com/machine"
   s.summary       = "Machine collects some informations about cpu, memory, processes."
   s.description   = "Machine collects some informations about cpu, memory, processes."
   s.files         = `git ls-files lib LICENSE README.md`.split("\n")
