@@ -21,4 +21,10 @@ module Machine
       end
     end
   end
+
+  module Helpers
+    def created_at
+      @created_at ||= File.ctime("/proc/#{pid}")
+    end
+  end
 end

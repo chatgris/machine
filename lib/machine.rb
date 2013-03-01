@@ -1,5 +1,7 @@
 # encoding: utf-8
 module Machine
+  module Helpers
+  end
 end
 require_relative 'machine/default/info'
 case RbConfig::CONFIG['host_os']
