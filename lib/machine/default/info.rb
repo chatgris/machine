@@ -21,5 +21,10 @@ module Machine
       end
     end
   end
+
+  module Helpers
+    def created_at
+    end
+  end
 end
 
