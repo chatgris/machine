@@ -24,7 +24,11 @@ module Machine
 
   module Helpers
     def created_at
-      @created_at ||= File.ctime("/proc/#{pid}")
+      @created_at ||= begin
+                        File.ctime("/proc/#{pid}")
+                      rescue Errno::ENOENT => exception
+                        nil
+                      end
     end
   end
 end
