@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage      = "http://chatgris.github.com/machine"
   s.summary       = "Machine collects some informations about cpu, memory, processes."
   s.description   = "Machine collects some informations about cpu, memory, processes."
+  s.license       = 'MIT'
   s.files         = `git ls-files lib LICENSE README.md`.split("\n")
   s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
